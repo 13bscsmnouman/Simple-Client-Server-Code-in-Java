@@ -1,0 +1,27 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.example;
+
+public class Notes implements java.io.Serializable{
+	public String name;
+	public String section;
+        public transient String Reg;
+	
+	
+	Notes(String namee, String sec, String reg){
+		name=namee;
+		section=sec;
+                Reg=reg;
+	}
+        
+        
+	Notes(){
+		name = null;
+		Reg = null;
+                section=null;
+	}
+
+}
